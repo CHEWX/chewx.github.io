@@ -1,2 +1,36 @@
 // Element specific styles - keep this to a minimum
 
+.infomain{
+
+	margin-top:50px;
+	border-bottom: 1px dotted #000;
+
+	p.text{
+		padding:20px 0px 40px 0px;
+		width:50%;
+		line-height:20px;
+
+	}
+}
+.infotitle{
+	border-top: 1px dotted #000;
+	padding:10px 0px 10px 0px;
+	border-bottom: 1px dotted #000;
+	overflow:auto;
+
+	p {
+		margin:0px;
+	}
+}
+.social {
+	img {
+
+		width:40px;
+		height:40px;
+		margin-right:40px;
+
+		&:hover {
+			opacity:0.9;
+		}
+	}
+}

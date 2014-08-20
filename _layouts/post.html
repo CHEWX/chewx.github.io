@@ -1,9 +1,27 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<article class="object">
+    <div class="infomain mt0">
+        <header class="infotitle">
+            <p class="left">
+            	{{ page.title }}
+            </p>
+            <p class="right">
+            	<time>{{ page.date | date_to_string }}</time>
+            </p>
+        </header>
+        <footer class="infotext ptb40">
+            	{{ content }}
+        </footer>
+    </div>
+</article>
+<!-- @TODO include discus here -->
+
+<!-- @TODO
+<div class="pagination">
+    <p class="next"><a href="#">next</a></p>
+    <p class="previous"><a href="#">prev</a></p>
 </div>
+-->

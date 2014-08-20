@@ -1,5 +1,5 @@
 body {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family:Courier New, "Courier", monospace;
 	font-weight: 400;
 	font-style: normal;
 	font-size:100%;
@@ -17,7 +17,7 @@ blockquote {
 }
 
 h1,h2,h3,h4{
-	font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family:Courier New, "Courier", monospace;
 }
 
 h1 {
@@ -57,6 +57,10 @@ h5 {
 
 p {
 	margin: 0 0 $padding/2;
+
+	& .infotext {
+		margin-bottom:20px;
+	}
 }
 
 pre{

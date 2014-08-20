@@ -1,10 +1,12 @@
 // Text links
 a{
 
-	color:$primary-color;
+	//color:$primary-color;
+	text-decoration:none;
+	color:#333333;
 
 	&:hover,&:focus{
-		text-decoration:none;
+		text-decoration:underline;
 	}
 }
 
