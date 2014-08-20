@@ -1,0 +1,13 @@
+@include responsive($small-desktop) {
+	// e.g. small browsers
+}
+@include responsive($tablet) {
+	// e.g. iPad, tablets, small browsers
+}
+
+@include responsive($mobile) {
+  // e.g. iPhone, mobile
+	body{
+		overflow-x:hidden;
+	}
+}

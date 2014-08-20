@@ -4,8 +4,9 @@ $btn-br: 5px; // Button border-radius
 $padding: 40px; // Padding and margins
 
 // Responsive breakpoints
-$small-break: 480px;
-$big-break: 780px;
+$mobile: 480px;
+$tablet: 780px;
+$small-desktop: 1023px;
 
 // Better default colors
 // Cool
@@ -27,7 +28,8 @@ $maroon:  #85144B;
 $white:  #fff;
 $silver: #ddd;
 $grey:   #aaa;
-$black:  #111;
+$light-grey:   #ededed;
+$black:  #000;
 
 // Color variables
 $primary-color: #1271db;

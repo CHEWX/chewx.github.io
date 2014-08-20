@@ -1,0 +1,44 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Reset using Normalize
+@import "base/reset";
+
+// Import Open Sans font from Google
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+// Set variables and reusable mixins
+@import "base/variables";
+@import "base/mixins";
+
+// Import typical layout sass modules
+@import "layout/grid";
+@import "base/type";
+@import "modules/helper";
+@import "modules/links";
+@import "modules/tables";
+@import "modules/forms";
+@import "modules/notifications";
+@import "modules/elements";
+
+// Use Font Awesome for icons
+@import "modules/icons";
+
+// Specific project styles, add any section specific sass modules here
+@import "layout/site";
+
+// Main layout styles - l-header - l-footer
+@import "layout/layout";
+
+// Additional styles to think about
+@import "layout/responsive";
+@import "base/print";
+
+// If IE support is needed
+@import "layout/ie";
+
+// For anything quick and dirty that needs thrown in
+@import "layout/shame";

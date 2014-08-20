@@ -1,9 +1,12 @@
 // 12 Column fluid and responsive grid
 
-.innerContainer {
+.inner-container {
     max-width:1140px;
-    padding:0px 03.50877192982456%; /*40/1140*/
+    padding:0px 3.50877192982456%; /*40/1140*/
     margin:0px auto;
+    -moz-box-sizing: content-box!important;
+    -webkit-box-sizing: content-box!important;
+    box-sizing: content-box!important;
 }
 
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
@@ -57,14 +60,14 @@
 // Media Queries
 
 // Small Moniters
-@media only screen and (max-width: 1023px) {
+@include responsive ($small-desktop) {
 body {
     font-size:0.8em;
     line-height:1.5em;
 }
 }
 // Tablet
-@include responsive($big-break) {
+@include responsive($tablet) {
     .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
         margin-right:3.8%;
     }
@@ -86,16 +89,18 @@ body {
     .twocol {
         width:30.75%;
     }
-    .twocol:nth-child(4n), .onecol:nth-child(6n), .threecol:nth-child(even) {
+    .twocol:nth-child(4n),
+    .onecol:nth-child(6n),
+    .threecol:nth-child(even) {
         margin-right:0px;
     }
 }
 // Mobile
-@include responsive($small-break) {
+@include responsive($mobile) {
     body {
         -moz-text-size-adjust:none;
         -webkit-text-size-adjust:none;
-        -ms-text-size-adjust:none;  
+        -ms-text-size-adjust:none;
     }
     .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol, .standard {
         width:auto !important;

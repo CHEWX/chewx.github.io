@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{base.url}}/assets/css/scss/main.css">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+<body>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <header class="l-header">
+        <h1>{{ site.name }}</h1>
+    </header>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <main class="l-main">
+        {{ content }}
+    </main>
 
-    </head>
-    <body>
+    <footer class="l-footer">
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
 
-          {{ content }}
+    </footer>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{base.url}}/assets/js/jquery-1.10.1.min.js"><\/script>')</script>
 
-    </body>
+        <script src="{{base.url}}/assets/js/src/global.js"></script>
+        <!--<script src="assets/js/main.min.js"></script>-->
+
+</body>
 </html>
