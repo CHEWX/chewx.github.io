@@ -1,4 +1,4 @@
 CHEWX
 =====
 
-Personal portfolio and blog
+Personal portfolio and blog using Jekyll
