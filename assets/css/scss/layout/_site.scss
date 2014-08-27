@@ -23,14 +23,25 @@
 	}
 }
 .social {
-	img {
-
+	a {
+		border-radius: 40px;
+		background: $grey;
 		width:40px;
 		height:40px;
 		margin-right:40px;
+		display: inline-block;
+		line-height: 37px;
+		text-align: center;
+		padding-top: 3px;
+		font-size:24px;
+		color: $white;
 
 		&:hover {
-			opacity:0.9;
+			background: $light-grey;
 		}
+	}
+
+	@include responsive($tablet) {
+		text-align: center;
 	}
 }
