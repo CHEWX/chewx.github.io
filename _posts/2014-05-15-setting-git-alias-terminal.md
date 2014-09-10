@@ -29,6 +29,6 @@ Anyway, on to how to set-up these alias&#8217;s, simply type the following comma
 
 This is the most useful command, use it every time you make a change in Git and see where the branch, head, remote is and keep on top.
 
-<pre>git config --global alias.lg 'log --graph --all --decorate —oneline'</pre>
+<pre>git config --global alias.lg 'log --graph --all --decorate --oneline'</pre>
 
 What else do you use ?
