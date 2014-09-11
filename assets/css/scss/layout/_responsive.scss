@@ -65,8 +65,8 @@
 @media only screen and (max-width: 714px) {
 
 	.inner-container {
-		width:94.5378151260504%; /* 675 / 714 */
-		margin:40px 0px 0px 2.8011204481793%;
+		width: auto;
+		margin:40px 20px 0px;
 		padding:0px;
 	}
 
@@ -95,7 +95,7 @@
 			border-top: 1px dotted #000;
 			border-bottom: 1px dotted #000;
 			padding:10px 0px 10px 0px;
-			margin:0px 2.962962962963%; /* 20 / 675 */
+			margin: 0;
 		}
 	}
 
@@ -103,6 +103,7 @@
 		 display: block;
 		 margin-left: auto;
 		 margin-right: auto;
+		 max-width: 100px;
 	}
 
 	.object img,
@@ -111,7 +112,7 @@
 		width:100%;
 	}
 
-	.social img{
+	.social a {
 		margin-right:4.4444444444444%; /* 30 / 675 */
 	}
 
@@ -131,10 +132,7 @@
 	.l-sidebar__nav {
 		ul li{
 			display:block;
-			border-top: 1px dotted #000;
 			border-bottom:0px;
-			padding:10px 0px 10px 0px;
-			margin:0px 2.962962962963%; /* 20 / 675 */
 
 			&:last-child {
 				border-bottom: 1px dotted #000;
