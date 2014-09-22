@@ -32,3 +32,15 @@ This is the most useful command, use it every time you make a change in Git and 
 <pre>git config --global alias.lg 'log --graph --all --decorate --oneline'</pre>
 
 What else do you use ?
+
+<strong>22/9 Update</strong>
+
+Found another useful one for SSH into your server.
+
+Firstly this lives in your bash profile, to get into this type the following in Terminal:
+
+<pre>nano ~/.bash_profile</pre>
+
+Addd on new line the below:
+
+<pre>alias servername='ssh user@server-name.com'</pre>
