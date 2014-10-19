@@ -7,12 +7,10 @@ body {
 }
 
 blockquote {
-	font-style: italic;
-	font-weight: 400;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family:Monaco, Menlo, Consolas, "Courier New", monospace;
 	padding-left: 25px;
-	font-size: 1.4em;
 	margin: 0 0 $padding/2;
+	font-size: 13px;
 	border-left:2px solid $primary-color;
 }
 
