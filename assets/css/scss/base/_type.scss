@@ -68,8 +68,8 @@ pre{
 	margin:0 0 $padding/2;
 	padding:10px;
 	background:#f5f5f5;
-	border:1px solid rgba(0,0,0,.1);
-	@include border-radius(5px);
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
 	display:block;
 	font-size: 13px;
 	line-height: 20px;
