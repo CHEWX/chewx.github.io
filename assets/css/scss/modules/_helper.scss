@@ -1,9 +1,11 @@
-.align-center {
-  text-align:center;
-}
+.align {
+	&--center {
+	  	text-align:center;
+	}
 
-.align-right {
-	text-align:right;
+	&--right {
+		text-align:right;
+	}
 }
 
 .center {
@@ -27,6 +29,12 @@
 	list-style:none;
 	padding-left:0;
 	margin-left:0;
+}
+
+.border {
+	&--top {
+		border-top: 1px dotted $primary-color;
+	}
 }
 
 .valign {

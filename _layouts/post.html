@@ -12,8 +12,11 @@ layout: default
             	<time>{{ page.date | date_to_string }}</time>
             </p>
         </header>
-        <footer class="infotext ptb40">
+        <main class="infotext ptb40">
             	{{ content }}
+        </main>
+        <footer class="ptb40 border--top align--center">
+            {% include social-share.html %}
         </footer>
     </div>
 </article>
