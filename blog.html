@@ -12,9 +12,9 @@ title: Blog
 	            </p>
 	            <p class="right"><time>{{ post.date | date_to_string }}</time></p>
 	        </header>
-	        <footer class="infotext">
-				<p>{{post.excerpt}}</p>
-	        </footer>
+	        <main class="infotext">
+				{{post.excerpt}}
+	        </main>
 	    </div>
 	</article>
 {% endfor %}
