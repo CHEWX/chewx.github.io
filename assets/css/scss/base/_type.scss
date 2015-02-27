@@ -16,9 +16,12 @@ blockquote {
 
 h1,h2,h3,h4{
 	font-family:Courier New, "Courier", monospace;
+	font-weight: normal;
+	font-size: 100%;
+	margin: 0 0 25px;
 }
 
-h1 {
+/*h1 {
 	font-size: 68px;
 	margin: 0 0 25px;
 	font-weight: 400;
@@ -51,7 +54,7 @@ h5 {
 	margin: 0 0 25px;
 	font-style: normal;
 	font-weight: normal;
-}
+}*/
 
 p {
 	margin: 0 0 $padding/2;
