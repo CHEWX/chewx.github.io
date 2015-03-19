@@ -1,5 +1,5 @@
 ---
-title: Tumblr Themeing and another 'admire' product
+title: Tumblr Theming and another 'admire' product
 layout: post
 ---
 
@@ -9,7 +9,7 @@ Anyway, I thought I'd give Tumblr a crack as it's only one page and a little les
 
 So, I created a theme. The theme was based on video initially and I'm sure it will develop into something that I will finally release, but at the moment I created it primarily for video.
 
-I like to curate stuff I like and share those curated interests; that's where the whole 'Admire' thing was born. This project was incidently called 'Admiregraphy', simply a blog on Videography and Photography, mainly the former. I like a lot of stuff on Vimeo, literally like. So I set-up an IFFFT to auto-post to Tumblr when I like a video, cool.
+I like to curate stuff I like and share those curated interests; that's where the whole 'Admire' thing was born. This project was incidently called 'Admiregraphy', simply a blog on Videography and Photography, mainly the former. I like a lot of stuff on Vimeo, literally like. So I set-up an IFTTT to auto-post to Tumblr when I like a video, cool.
 
 I can then share with the world the videos I like in a nicely currated theme I made. Simple.
 
