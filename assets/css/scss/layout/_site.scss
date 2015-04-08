@@ -1,5 +1,41 @@
 // Element specific styles - keep this to a minimum
 
+.home-text {
+	font-family: 'Playfair Display', serif;
+	font-size: 70px;
+	line-height: 1.4;
+	color: #484848;
+	margin-top: -15px;
+
+	@include responsive($small-desktop) {
+		text-align: center;
+		margin-top: 0;
+	}
+
+	@include responsive($tablet) {
+		font-size: 60px;
+	}
+
+	@include responsive($mobile) {
+		font-size: 30px;
+	}
+
+	&__ultra {
+		font-weight: 900;
+		font-style: italic;
+		color: black;
+	}
+
+	&__highlight {
+		font-weight: 700;
+		text-shadow: 2px 2px 0 yellow;
+	}
+
+	&__bold {
+		font-weight: 700;
+		font-style: italic;
+	}
+}
 .infomain{
 
 	margin-top: 50px;
