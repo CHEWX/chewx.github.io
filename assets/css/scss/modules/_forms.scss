@@ -46,3 +46,47 @@ form{
 		}
 	}
 }
+
+//// FORMERLY
+
+.form-horizontal .form-actions {
+    padding-left: 0;
+}
+
+.form-horizontal .control-label {
+    width: 100%;
+    float: none;
+    text-align: left;
+}
+
+.form-horizontal {
+	label {
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	input, textarea {
+	    border-radius: 0;
+	    padding: 10px 0;
+	    border: 0;
+	    border-top: 1px dotted #000;
+	    border-bottom: 1px dotted #000;
+	    width: 100%;
+	    margin-bottom: 40px;
+
+	    &:focus {
+		    border: 0;
+		    border-top: 1px solid #000;
+		    border-bottom: 1px solid #000;
+		    outline: 0;
+	    }
+
+	    @include responsive($mobile) {
+	    	width: 100%;
+	    }
+	}
+
+	textarea {
+		height: 150px;
+	}
+}
