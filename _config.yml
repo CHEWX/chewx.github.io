@@ -1,5 +1,5 @@
 name: CHEWX
-highlighter: true
+highlighter: rouge
 markdown: kramdown
 permalink: '/:year/:title/'
 paginate_path: '/page:num/'
@@ -8,4 +8,5 @@ paginate: 10
 sass:
   sass_dir: assets/css/scss
   style: :compressed
+gems: [jekyll-paginate]
 
