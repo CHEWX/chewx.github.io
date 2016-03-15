@@ -30,16 +30,22 @@ Open that folder and create a symlink that will do all the work for you, think o
 ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 </pre>
 
-If your using Sublime Text 3, modify the above where appropriate.
+If your using Sublime Text 3, you need to drop the number and use the below;
+
+<pre>
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+</pre>
 
 You now need to edit your .bash_profile to tell terminal how to process the shortcut.
 
-<pre>nano ~/.bash_profile
+<pre>
+nano ~/.bash_profile
 </pre>
 
-This will open up your .bash_profile so you can edit it, place the following at the top.
+This will open up your .bash_profile so you can edit it, place the following at the top. (The hash is only for commenting purposes)
 
-<pre>export PATH=$PATH:~/bin # support for subl
+<pre>
+export PATH=$PATH:~/bin # support for subl
 </pre>
 
 Always good to comment because as a developer your .bash_profile tends to fill with commands. Here we are opening the path using the symlink. Path -> using path in the symlink with binded &#8216;subl&#8217;.
