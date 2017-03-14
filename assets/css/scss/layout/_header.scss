@@ -1,18 +1,11 @@
 /*  ==========================================================================
-    Grid Container
+    Header
     ========================================================================== */
 
 /*
     Block
     ========================================================================== */
 
-.container {
-    max-width: $w-container;
-    padding: 0 percentage(40px / $w-container);
-    margin:0px auto;
-    box-sizing: content-box!important;
+.l-header {
 
-    // @include breakpoint( small down ) {
-    //     padding: 0 20px;
-    // }
 }

@@ -6,33 +6,43 @@
 // Reset using Normalize
 @import "base/reset";
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
-
-// Set variables and reusable mixins
+// Set variables and reusable mixins/animations
 @import "base/variables";
+@import "base/functions";
 @import "base/mixins";
+@import "base/animations";
 
 // Import typical layout sass modules
 @import "layout/grid";
 @import "base/type";
-@import "modules/helper";
+
+// Small re-usuable components prefixed with c-
+@import "modules/components";
+
+// General site elements
 @import "modules/links";
+@import "modules/lists";
 @import "modules/tables";
 @import "modules/forms";
-@import "modules/notifications";
-@import "modules/elements";
 
-// Use Font Awesome for icons
+// Large re-usuable modules prefixed with m-
+@import "modules/modules";
+
+// SVG icon sizing
 @import "modules/icons";
 
-// Specific project styles, add any section specific sass modules here
+// Specific project styles
 @import "layout/site";
 
 // Main layout styles - l-header - l-footer
 @import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
 
-// Additional styles to think about
-@import "layout/responsive";
+// Specific page styles
+@import "layout/pages";
+
+// Print styles
 @import "base/print";
 
 // If IE support is needed
@@ -40,3 +50,11 @@
 
 // For anything quick and dirty that needs thrown in
 @import "layout/shame";
+
+// Now this is where you put your larger site specfic sections - keep OOCSS - credit - inuit
+@import "ui/slideshow";
+@import "ui/wordpress";
+
+// Helper must help cascading stylesheets so add last
+@import "modules/spacing";
+@import "modules/helper";

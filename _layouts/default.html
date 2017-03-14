@@ -7,21 +7,35 @@
     <meta charset="utf-8">
     <title>{{ page.title }} | Tom Hopcraft</title>
 
+    <!--<link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//fast.fonts.net">-->
+
     <meta name="description" content="Tom Hopcraft is a web designer and front-end developer from Northampton UK. A BA Interactive Media graduate from Nottingham Trent University specialising in Responsive Web Design and Wordpress." />
     <meta name="keywords" content="web design, ntu, multimedia, wordpress, interactive media, tom hopcraft, chewx, graphic design, nottingham, daventry, freelance, chewx, rwd, responsive, responsive web design"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" href="{{base.url}}/assets/img/favicon.ico">
     <link rel="apple-touch-icon" href="{{base.url}}/assets/img/apple-touch-icon.jpg">
 
     <link rel="stylesheet" href="{{base.url}}/assets/css/scss/main.css">
-    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-    <header class="l-header"></header>
+    <header class="l-header">
+        Tom Hopcraft
+    </header>
 
-    <div class="inner-container">
+    <main class="l-main">
+        {{ content }}
+    </main>
+
+
+<!--     <div class="inner-container">
 
         <aside class="l-sidebar">
 
@@ -42,9 +56,11 @@
             {{ content }}
         </main>
 
-    </div>
+    </div> -->
 
-    <footer class="l-footer"></footer>
+    <footer class="l-footer">
+
+    </footer>
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{base.url}}/assets/js/jquery-1.10.1.min.js"><\/script>')</script>

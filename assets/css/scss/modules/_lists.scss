@@ -1,21 +1,13 @@
 /*  ==========================================================================
-    Tables
+    Lists
     ========================================================================== */
-
 /*
-    Block
+    Reset
     ========================================================================== */
 
-table {
-	width: 100%;
-
-	th, td {
-		text-align: left;
-		padding: 5px;
-	}
-
-	th {
-		border-top: 1px solid #ccc;
-		border-bottom: 1px solid #ccc;
-	}
+.list--bare,
+%list-bare {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 }

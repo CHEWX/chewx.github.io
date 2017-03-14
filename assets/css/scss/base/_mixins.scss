@@ -1,4 +1,10 @@
-// Clear after floats
+/*  ==========================================================================
+    Mixins
+    ========================================================================== */
+/*
+    Clear after floats
+    ========================================================================== */
+
 @mixin clearfix {
 	zoom:1;
 	&:before, &:after {
@@ -12,16 +18,26 @@
 	}
 }
 
-// Apply clearfix to this classes by default
-.clearfix, .group {
-	@include clearfix;
+/*
+    Responsive mixins
+    ========================================================================== */
+
+@mixin custom-breakpoint($max, $min: $w-min) {
+    @media (min-width: $min) and (max-width: $max) {
+    	@content;
+    }
 }
 
-// Responsive mixins
-@mixin responsive($res) {
-	@media screen and (max-width: $res) {
-		@content;
-	}
+@mixin heightpoint($max) {
+    @media (min-height: 0px ) and (max-height: $max) {
+        @content;
+    }
+}
+
+@mixin custom-mobilefirst($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
 }
 
 @mixin mobilefirst($res) {
@@ -30,14 +46,30 @@
 	}
 }
 
-@mixin border-radius($r) {
-	-webkit-border-radius: $r;
-	-moz-border-radius: $r;
-	border-radius: $r;
-}
+/*
+    Typography
+    ========================================================================== */
 
-@mixin box-shadow($bs) {
-	-webkit-box-shadow: $bs;
-	-moz-box-shadow: $bs;
-	box-shadow: $bs;
+// Rem font-size PX fallback
+
+@mixin rem($sizeValue: 1.6) {
+    // Fallback
+    font-size: ($sizeValue * 10) + px;
+    font-size: rem-calc(($sizeValue * 10));
 }
+// USAGE - @include rem(1.2);
+
+// REM RWD using maps
+@mixin rem-rwd($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            @include rem( $fs-font-size );
+        }
+        @else {
+            @include breakpoint( $fs-breakpoint ) {
+                @include rem( $fs-font-size );
+            }
+        }
+    }
+}
+// USAGE - @include rem-rwd($fs-body);
