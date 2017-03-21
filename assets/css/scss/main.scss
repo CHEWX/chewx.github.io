@@ -6,11 +6,18 @@
 // Reset using Normalize
 @import "base/reset";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
 // Set variables and reusable mixins/animations
 @import "base/variables";
 @import "base/functions";
 @import "base/mixins";
 @import "base/animations";
+
+// Foudation Imports
+@import "../../../bower_components/foundation-sites/scss/grid/grid";
+@import "../../../bower_components/foundation-sites/scss/util/util";
+@include foundation-grid;
 
 // Import typical layout sass modules
 @import "layout/grid";

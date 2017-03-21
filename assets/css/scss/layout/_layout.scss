@@ -6,4 +6,11 @@
     Block
     ========================================================================== */
 
-.l-main { }
+.l-main {
+    margin: $padding / 2;
+    max-width: 800px;
+
+    @include breakpoint( medium ) {
+        margin: $padding;
+    }
+}

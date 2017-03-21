@@ -8,10 +8,31 @@
 
 a {
 	// color: $primary-color;
+    color: $c-black;
+    text-decoration: none;
+    position: relative;
+    mix-blend-mode: exclusion;
+
+    &:after {
+        content: '';
+        height: .3vw;
+        width: 100%;
+        background: red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transition: height ease 150ms;
+    }
 
 	&:hover,
 	&:focus {
 		text-decoration: none;
+
+        &:after {
+            height: 100%;
+        }
 	}
 }
 

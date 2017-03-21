@@ -1,4 +1,23 @@
 /*  ==========================================================================
+    Foundation
+    ========================================================================== */
+
+/*
+    Grid
+    ========================================================================== */
+
+$grid-column-gutter: (
+    small: 20px,
+    medium: 40px,
+);
+
+$global-width: 1200px;
+$grid-column-count: 6;
+$global-flexbox: false;
+$global-right: left;
+$global-left: left;
+
+/*  ==========================================================================
     Globals (Mobile First)
     ========================================================================== */
 
@@ -49,11 +68,22 @@ $c-subtle: $c-grey; // Subtle color for subtle text
 /*
     Colour Maps
     ========================================================================== */
+
+/*
+    Type Maps
+    ========================================================================== */
+
+$fs-body : (
+    small: 2.2,
+    medium: 3.5,
+    large: 4.0
+);
+
 /*
     Fonts
     ========================================================================== */
 
-$f-body: sans-serif;
-$f-header: serif;
+$f-body: Montserrat, sans-serif;
+$f-header: $f-body;
 $f-pre: Monaco, Menlo, Consolas, "Courier New", monospace;
 $f-blockquote: Georgia, Times, "Times New Roman", serif;
