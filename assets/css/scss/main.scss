@@ -17,7 +17,7 @@
 // Foudation Imports
 @import "../../../bower_components/foundation-sites/scss/grid/grid";
 @import "../../../bower_components/foundation-sites/scss/util/util";
-@include foundation-grid;
+// @include foundation-grid;
 
 // Import typical layout sass modules
 @import "layout/grid";
@@ -29,8 +29,8 @@
 // General site elements
 @import "modules/links";
 @import "modules/lists";
-@import "modules/tables";
-@import "modules/forms";
+// @import "modules/tables";
+// @import "modules/forms";
 
 // Large re-usuable modules prefixed with m-
 @import "modules/modules";
@@ -60,7 +60,6 @@
 
 // Now this is where you put your larger site specfic sections - keep OOCSS - credit - inuit
 @import "ui/slideshow";
-@import "ui/wordpress";
 
 // Helper must help cascading stylesheets so add last
 @import "modules/spacing";

@@ -6,51 +6,51 @@
     Text Align
     ========================================================================== */
 
-.align {
-	&--center {
-		text-align: center;
-	}
+// .align {
+// 	&--center {
+// 		text-align: center;
+// 	}
 
-	&--right {
-		text-align: right;
-	}
-}
+// 	&--right {
+// 		text-align: right;
+// 	}
+// }
 
 /*
     Floats
     ========================================================================== */
 
-.float {
-	&--right {
-		float: right;
-	}
+// .float {
+// 	&--right {
+// 		float: right;
+// 	}
 
-	&--left {
-		float: left;
-	}
-}
+// 	&--left {
+// 		float: left;
+// 	}
+// }
 
 /*
     Position
     ========================================================================== */
 
-.relative {
-	position: relative;
-}
+// .relative {
+// 	position: relative;
+// }
 
 /*
     Vertical Align
     ========================================================================== */
 
-.table {
-	display: table;
-	width: 100%;
-	height: 100%;
+// .table {
+// 	display: table;
+// 	width: 100%;
+// 	height: 100%;
 
-	&__cell {
-		display: table-cell;
-		vertical-align: middle;
-		width: 100%;
-		height: 100%;
-	}
-}
+// 	&__cell {
+// 		display: table-cell;
+// 		vertical-align: middle;
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+// }
