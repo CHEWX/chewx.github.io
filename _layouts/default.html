@@ -19,36 +19,59 @@
     <link rel="icon" type="image/png" href="{{base.url}}/assets/img/favicon.ico">
     <link rel="apple-touch-icon" href="{{base.url}}/assets/img/apple-touch-icon.jpg">
 
-    <link rel="stylesheet" href="{{base.url}}/assets/css/scss/main.css?v=2.5">
+    <link rel="stylesheet" href="{{base.url}}/assets/css/scss/main.css?v=2.51">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
     <![endif]-->
 </head>
 <body>
 
-    <header class="l-header">
-        Tom Hopcraft
-    </header>
+    <div class="video-container">
+        <video width="320" height="240" autoplay mute loop>
+            <source src="{{base.url}}/assets/video/high-six.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <main class="l-main">
-        {{ content }}
-    </main>
+    <div class="wrapper">
+        <header class="l-header">
+            Tom Hopcraft
+        </header>
 
-    <footer class="l-footer">
+        <main class="l-main">
+            {{ content }}
+        </main>
 
-    </footer>
+        <footer class="l-footer">
+            <a href="mailto:tom@admire.agency">Email</a> / <a href="http://www.twitter.com/chewx" target="_blank">Tweet</a>
+        </footer>
+    </div>
 
     <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-19652170-1']);
-      _gaq.push(['_trackPageview']);
+        var $body = document.getElementsByTagName( 'body' )[0];
+        var $six_trigger = document.getElementsByClassName( 'js-six-trigger' )[0];
+        var six_video_active_class = 'show-video';
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        $six_trigger.onmouseover = function(){
+
+            $body.classList.add( six_video_active_class );
+        }
+
+        $six_trigger.onmouseout = function(){
+
+            $body.classList.remove( six_video_active_class );
+        }
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19652170-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
     </script>
 

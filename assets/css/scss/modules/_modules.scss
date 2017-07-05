@@ -1,1 +1,46 @@
-// Reusable Elements
+/*  ==========================================================================
+    Video
+    ========================================================================== */
+
+/*
+    Block
+    ========================================================================== */
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+
+    @include breakpoint( xlarge ) {
+        display: block;
+    }
+
+    & + .wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
+    .show-video & {
+        video {
+            transform: translateY( -50% );
+            opacity: 1;
+        }
+    }
+
+    video {
+        height: 100%;
+        width: 100%;
+        max-height: 80vh;
+        max-width: 80vw;
+        top: 50%;
+        transform: translateY( calc( -50% + 50px ) );
+        position: relative;
+        margin: 0 auto;
+        opacity: 0;
+        transition: ease transform 400ms, opacity ease 400ms;
+    }
+}

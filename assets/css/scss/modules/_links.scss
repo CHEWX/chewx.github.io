@@ -2,11 +2,20 @@
     Text Links
     ========================================================================== */
 
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: red;
+    }
+}
+
 /*
     Block
     ========================================================================== */
 
-a {
+.link--raise {
     color: $c-white;
     text-decoration: none;
     position: relative;
@@ -32,6 +41,7 @@ a {
 
 	&:hover,
 	&:focus {
+        color: $c-white;
 		text-decoration: none;
 
         &:after {
