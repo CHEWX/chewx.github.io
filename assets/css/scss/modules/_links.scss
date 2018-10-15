@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: red;
+        color: $c-highlight;
     }
 }
 
@@ -26,7 +26,7 @@ a {
         content: '';
         height: 100%;
         width: 100%;
-        background: red;
+        background: $c-highlight;
         position: absolute;
         bottom: 0;
         left: 0;
