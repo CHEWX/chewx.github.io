@@ -18,11 +18,19 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.4;
-    color: #f1f1f1;
-    background-color: #010101;
+    color: #010101;
+    background-color: #f1f1f1;
 
     @include breakpoint( xxlarge ) {
         font-size: calc( 1em + 1.7vw );
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        color: #f1f1f1;
+        background-color: #010101;
     }
 }
 
